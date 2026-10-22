@@ -1,0 +1,39 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: nkdd_db
+    restart: always
+    environment:
+      POSTGRES_USER: nkdd
+      POSTGRES_PASSWORD: nkdd123
+      POSTGRES_DB: nkdd
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U nkdd -d nkdd"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5432:5432"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nkdd_app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgresql://nkdd:nkdd123@db:5432/nkdd?schema=public
+      AUTH_SECRET: nkdd-production-secret-key-at-least-32-chars-long
+      NEXTAUTH_URL: http://localhost:3000
+      AUTH_TRUST_HOST: "true"
+      TZ: Asia/Ho_Chi_Minh
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  pgdata:

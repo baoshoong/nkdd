@@ -1,0 +1,302 @@
+[2026-10-21 14:00:35Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-10-21 14:00:35Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:35Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:35Z INFO HostContext] Well known config file 'Credentials': 'C:\quyhdp\action-runner\.credentials'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'Runner': 'C:\quyhdp\action-runner\.runner'
+[2026-10-21 14:00:36Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-10-21 14:00:36Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26100.
+[2026-10-21 14:00:36Z INFO Listener] Version: 2.338.0
+[2026-10-21 14:00:36Z INFO Listener] Commit: 197ca027b90de199464dee3bb9ff198a1db60967
+[2026-10-21 14:00:36Z INFO Listener] Culture: en-US
+[2026-10-21 14:00:36Z INFO Listener] UI Culture: en-US
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO Listener] Validating directory permissions for: 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO CommandLineParser] Parse
+[2026-10-21 14:00:36Z INFO CommandLineParser] Parsing 3 args
+[2026-10-21 14:00:36Z INFO CommandLineParser] parsing argument
+[2026-10-21 14:00:36Z INFO CommandLineParser] HasArgs: False
+[2026-10-21 14:00:36Z INFO CommandLineParser] Adding Command: run
+[2026-10-21 14:00:36Z INFO CommandLineParser] parsing argument
+[2026-10-21 14:00:36Z INFO CommandLineParser] HasArgs: True
+[2026-10-21 14:00:36Z INFO CommandLineParser] arg: startuptype
+[2026-10-21 14:00:36Z INFO CommandLineParser] parsing argument
+[2026-10-21 14:00:36Z INFO CommandLineParser] HasArgs: True
+[2026-10-21 14:00:36Z INFO CommandLineParser] Adding option 'startuptype': 'service'
+[2026-10-21 14:00:36Z INFO Listener] Arguments parsed
+[2026-10-21 14:00:36Z INFO Runner] ExecuteCommand
+[2026-10-21 14:00:36Z INFO ConfigurationStore] currentAssemblyLocation: C:\quyhdp\action-runner\bin\Runner.Listener.dll
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] binPath: C:\quyhdp\action-runner\bin
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] RootFolder: C:\quyhdp\action-runner
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'Runner': 'C:\quyhdp\action-runner\.runner'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] ConfigFilePath: C:\quyhdp\action-runner\.runner
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\quyhdp\action-runner\.runner_migrated'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] MigratedConfigFilePath: C:\quyhdp\action-runner\.runner_migrated
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'Credentials': 'C:\quyhdp\action-runner\.credentials'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] CredFilePath: C:\quyhdp\action-runner\.credentials
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\quyhdp\action-runner\.credentials_migrated'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] MigratedCredFilePath: C:\quyhdp\action-runner\.credentials_migrated
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'Service': 'C:\quyhdp\action-runner\.service'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] ServiceConfigFilePath: C:\quyhdp\action-runner\.service
+[2026-10-21 14:00:36Z INFO CommandSettings] Flag 'help': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Flag 'version': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Flag 'check': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Command 'configure': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Command 'remove': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Command 'warmup': 'False'
+[2026-10-21 14:00:36Z INFO ConfigurationManager] LoadSettings
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsConfigured()
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsConfigured: True
+[2026-10-21 14:00:36Z INFO ConfigurationManager] Is configured: True
+[2026-10-21 14:00:36Z INFO ConfigurationStore] Read setting file: 410 chars
+[2026-10-21 14:00:36Z INFO ConfigurationManager] Settings Loaded
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsServiceConfigured: True
+[2026-10-21 14:00:36Z INFO CommandSettings] Command 'run': 'True'
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsConfigured()
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsConfigured: True
+[2026-10-21 14:00:36Z INFO ConfigurationManager] Is configured: True
+[2026-10-21 14:00:36Z INFO Runner] Set runner startup type - Service
+[2026-10-21 14:00:36Z INFO CommandSettings] Flag 'once': 'False'
+[2026-10-21 14:00:36Z INFO CommandSettings] Flag 'once': 'False'
+[2026-10-21 14:00:36Z INFO Runner] RunAsync
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-21 14:00:36Z INFO Runner] Validating directory permissions for: 'C:\quyhdp\action-runner\_work'
+[2026-10-21 14:00:36Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-10-21 14:00:36Z INFO ConfigurationStore] IsMigratedConfigured: True
+[2026-10-21 14:00:36Z INFO ConfigurationStore] Read migrated setting file: 410 chars
+[2026-10-21 14:00:36Z INFO ConfigurationManager] Migrated Settings Loaded
+[2026-10-21 14:00:36Z INFO Runner] Loaded migrated settings from .runner_migrated file
+[2026-10-21 14:00:36Z INFO Runner] {
+  "AgentId": 3,
+  "AgentName": "server-nkkd",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus7.actions.githubusercontent.com/MgiSGKq5CjqGC0dfCeL03UfhThJGjg9y9EqN46WNqnxZMs4gTJ/",
+  "GitHubUrl": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-10-21 14:00:36Z INFO Runner] Attempting to create session using migrated settings
+[2026-10-21 14:00:36Z INFO Runner] Using BrokerMessageListener
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] Using provided settings
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] Using migrated settings from .runner_migrated
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] {
+  "AgentId": 3,
+  "AgentName": "server-nkkd",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus7.actions.githubusercontent.com/MgiSGKq5CjqGC0dfCeL03UfhThJGjg9y9EqN46WNqnxZMs4gTJ/",
+  "GitHubUrl": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] Loading Credentials
+[2026-10-21 14:00:36Z INFO ConfigurationStore] HasCredentials()
+[2026-10-21 14:00:36Z INFO ConfigurationStore] stored True
+[2026-10-21 14:00:36Z INFO CredentialManager] GetCredentialProvider
+[2026-10-21 14:00:36Z INFO CredentialManager] Creating type OAuth
+[2026-10-21 14:00:36Z INFO CredentialManager] Creating credential type: OAuth
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 14:00:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 14:00:36Z INFO HostContext] Well known config file 'RSACredentials': 'C:\quyhdp\action-runner\.credentials_rsaparams'
+[2026-10-21 14:00:36Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] Attempt to create session.
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2026-10-21 14:00:36Z INFO ConfigurationStore] HasCredentials()
+[2026-10-21 14:00:36Z INFO ConfigurationStore] stored True
+[2026-10-21 14:00:36Z INFO CredentialManager] GetCredentialProvider
+[2026-10-21 14:00:36Z INFO CredentialManager] Creating type OAuth
+[2026-10-21 14:00:36Z INFO CredentialManager] Creating credential type: OAuth
+[2026-10-21 14:00:36Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] VssConnection created
+[2026-10-21 14:00:36Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2026-10-21 14:00:36Z INFO RunnerServer] EstablishVssConnection
+[2026-10-21 14:00:36Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-10-21 14:00:36Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-10-21 14:00:37Z INFO RunnerServer] EstablishVssConnection
+[2026-10-21 14:00:37Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-10-21 14:00:37Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-10-21 14:00:37Z INFO RunnerServer] EstablishVssConnection
+[2026-10-21 14:00:37Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-10-21 14:00:37Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-10-21 14:00:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-10-21 14:00:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-10-21 14:00:38Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-10-21 14:00:38Z INFO BrokerMessageListener] VssConnection created
+[2026-10-21 14:00:38Z INFO Terminal] WRITE LINE: 
+[2026-10-21 14:00:38Z INFO Terminal] WRITE LINE: 
+[2026-10-21 14:00:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 14:00:38Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 14:00:39Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 14:00:40Z INFO BrokerMessageListener] Session created.
+[2026-10-21 14:00:40Z INFO Runner] Successfully created session with migrated settings
+[2026-10-21 14:00:40Z INFO Terminal] WRITE LINE: Current runner version: '2.338.0'
+[2026-10-21 14:00:40Z INFO Terminal] WRITE LINE: 2026-10-21 14:00:40Z: Listening for Jobs
+[2026-10-21 14:00:40Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-10-21 14:50:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 14:50:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 15:16:22Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=b637e9da-90d1-44ac-90c4-fd17b7554581&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 11.194 seconds.
+[2026-10-21 15:36:59Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=b637e9da-90d1-44ac-90c4-fd17b7554581&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 11.067 seconds.
+[2026-10-21 15:41:12Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 15:41:13Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 15:47:34Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=b637e9da-90d1-44ac-90c4-fd17b7554581&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10.876 seconds.
+[2026-10-21 16:07:19Z INFO Runner] Received RunnerRefreshConfigMessage for 'runner' config file
+[2026-10-21 16:07:19Z INFO RunnerConfigUpdater] Verifying runner qualified id: U_kgDOE2I6Xg/R_kgDOVGHoMQ/self-hosted/3
+[2026-10-21 16:07:19Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 16:07:19Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 16:07:19Z INFO HostContext] Well known config file 'Runner': 'C:\quyhdp\action-runner\.runner'
+[2026-10-21 16:07:20Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:07:20Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:07:21Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 16:07:21Z INFO ConfigurationStore] Saving runner migrated settings
+[2026-10-21 16:07:21Z INFO ConfigurationStore] Delete exist runner migrated settings file.
+[2026-10-21 16:07:22Z INFO ConfigurationStore] Migrated Settings Saved.
+[2026-10-21 16:07:22Z INFO Runner] Runner configuration was updated. Session restart has been scheduled
+[2026-10-21 16:07:22Z INFO Runner] Pending session restart detected and job dispatcher is not busy. Restarting session now.
+[2026-10-21 16:07:22Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2026-10-21 16:07:22Z INFO Runner] Deleting Runner Session...
+[2026-10-21 16:07:22Z INFO Runner] Restarting runner session after config update...
+[2026-10-21 16:07:22Z INFO Runner] Runner configuration was refreshed, restarting session...
+[2026-10-21 16:07:22Z INFO ConfigurationManager] LoadSettings
+[2026-10-21 16:07:22Z INFO ConfigurationStore] IsConfigured()
+[2026-10-21 16:07:22Z INFO ConfigurationStore] IsConfigured: True
+[2026-10-21 16:07:22Z INFO ConfigurationManager] Is configured: True
+[2026-10-21 16:07:22Z INFO ConfigurationManager] Settings Loaded
+[2026-10-21 16:07:22Z INFO Runner] RunAsync
+[2026-10-21 16:07:22Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-21 16:07:22Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-21 16:07:22Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-21 16:07:22Z INFO Runner] Validating directory permissions for: 'C:\quyhdp\action-runner\_work'
+[2026-10-21 16:07:22Z INFO ConfigurationManager] LoadMigratedSettings
+[2026-10-21 16:07:22Z INFO ConfigurationStore] IsMigratedConfigured()
+[2026-10-21 16:07:22Z INFO ConfigurationStore] IsMigratedConfigured: True
+[2026-10-21 16:07:22Z INFO ConfigurationManager] Migrated Settings Loaded
+[2026-10-21 16:07:22Z INFO Runner] Loaded migrated settings from .runner_migrated file
+[2026-10-21 16:07:22Z INFO Runner] {
+  "AgentId": 3,
+  "AgentName": "server-nkkd",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus7.actions.githubusercontent.com/MgiSGKq5CjqGC0dfCeL03UfhThJGjg9y9EqN46WNqnxZMs4gTJ/",
+  "GitHubUrl": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-10-21 16:07:22Z INFO Runner] Attempting to create session using migrated settings
+[2026-10-21 16:07:22Z INFO Runner] Using BrokerMessageListener
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] Using provided settings
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] Using migrated settings from .runner_migrated
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] {
+  "AgentId": 3,
+  "AgentName": "server-nkkd",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus7.actions.githubusercontent.com/MgiSGKq5CjqGC0dfCeL03UfhThJGjg9y9EqN46WNqnxZMs4gTJ/",
+  "GitHubUrl": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] Loading Credentials
+[2026-10-21 16:07:22Z INFO ConfigurationStore] HasCredentials()
+[2026-10-21 16:07:22Z INFO ConfigurationStore] stored True
+[2026-10-21 16:07:22Z INFO CredentialManager] GetCredentialProvider
+[2026-10-21 16:07:22Z INFO CredentialManager] Creating type OAuth
+[2026-10-21 16:07:22Z INFO CredentialManager] Creating credential type: OAuth
+[2026-10-21 16:07:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] Attempt to create session.
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2026-10-21 16:07:22Z INFO ConfigurationStore] HasCredentials()
+[2026-10-21 16:07:22Z INFO ConfigurationStore] stored True
+[2026-10-21 16:07:22Z INFO CredentialManager] GetCredentialProvider
+[2026-10-21 16:07:22Z INFO CredentialManager] Creating type OAuth
+[2026-10-21 16:07:22Z INFO CredentialManager] Creating credential type: OAuth
+[2026-10-21 16:07:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] VssConnection created
+[2026-10-21 16:07:22Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2026-10-21 16:07:22Z INFO RunnerServer] EstablishVssConnection
+[2026-10-21 16:07:22Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-10-21 16:07:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-10-21 16:07:22Z INFO RunnerServer] EstablishVssConnection
+[2026-10-21 16:07:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-10-21 16:07:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-10-21 16:07:22Z INFO RunnerServer] EstablishVssConnection
+[2026-10-21 16:07:22Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-10-21 16:07:22Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-10-21 16:07:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-10-21 16:07:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-10-21 16:07:23Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-10-21 16:07:23Z INFO BrokerMessageListener] VssConnection created
+[2026-10-21 16:07:23Z INFO Terminal] WRITE LINE: 
+[2026-10-21 16:07:23Z INFO Terminal] WRITE LINE: 
+[2026-10-21 16:07:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:07:23Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:07:24Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 16:07:25Z INFO BrokerMessageListener] Session created.
+[2026-10-21 16:07:25Z INFO Runner] Successfully created session with migrated settings
+[2026-10-21 16:07:25Z INFO Terminal] WRITE LINE: Current runner version: '2.338.0'
+[2026-10-21 16:07:25Z INFO Terminal] WRITE LINE: 2026-10-21 16:07:25Z: Listening for Jobs
+[2026-10-21 16:07:25Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2026-10-21 16:57:40Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 16:57:41Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 17:47:55Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 17:47:56Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 18:38:11Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 18:38:13Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 19:28:27Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 19:28:28Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 20:18:43Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 20:18:44Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 21:09:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 21:09:01Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 21:59:15Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 21:59:16Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 22:49:46Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 22:49:47Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-21 23:40:02Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-21 23:40:03Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 00:30:17Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 00:30:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 01:20:33Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 01:20:34Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 02:10:47Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 02:10:48Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 03:01:02Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 03:01:03Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 03:51:17Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 03:51:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 04:41:33Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 04:41:34Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 04:45:54Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=7ba1c521-7bc1-4e0a-8356-ffe98d3b83d4&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 11.192 seconds.
+[2026-10-22 05:32:19Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 05:32:20Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 06:22:40Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\quyhdp\action-runner\.credentials_rsaparams
+[2026-10-22 06:22:41Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2026-10-22 06:24:00Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=7ba1c521-7bc1-4e0a-8356-ffe98d3b83d4&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10.811 seconds.
+[2026-10-22 06:36:34Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=7ba1c521-7bc1-4e0a-8356-ffe98d3b83d4&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10.941 seconds.
+[2026-10-22 06:38:24Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=7ba1c521-7bc1-4e0a-8356-ffe98d3b83d4&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10.992 seconds.
+[2026-10-22 06:42:08Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=7ba1c521-7bc1-4e0a-8356-ffe98d3b83d4&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10.887 seconds.
+[2026-10-22 06:47:48Z WARN GitHubActionsService] Attempt 1 of GET request to https://broker.actions.githubusercontent.com/message?sessionId=7ba1c521-7bc1-4e0a-8356-ffe98d3b83d4&status=Online&runnerVersion=2.338.0&os=Windows&architecture=X64&disableUpdate=false failed (Socket Error: ConnectionReset). The operation will be retried in 10.987 seconds.

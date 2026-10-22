@@ -1,0 +1,120 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261016235345
+Username: DC01-BVKHANHHOI\hoalp
+RunAs User: DC01-BVKHANHHOI\hoalp
+Configuration Name: 
+Machine: SRV-APPCNTT (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 3532
+PSVersion: 5.1.26100.33438
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.33438
+BuildVersion: 10.0.26100.33438
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+>> git fetch
+From https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+ * branch            main       -> FETCH_HEAD
+>> git reset
+HEAD is now at eea263c Merge branch 'main' of https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+Commit: eea263c Merge branch 'main' of https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+>> Dung service NKDD-Report
+WARNING: Waiting for service 'Báo cáo Điều dưỡng Khánh Hội (NKDD-Report)' to stop...
+WARNING: Waiting for service 'Báo cáo Điều dưỡng Khánh Hội (NKDD-Report)' to stop...
+WARNING: Waiting for service 'Báo cáo Điều dưỡng Khánh Hội (NKDD-Report)' to stop...
+>> npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache i
+f you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerfu
+l.
+npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead
+.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabi
+lities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorb
+itant rates) by contacting i@izs.me
+npm warn deprecated fstream@1.0.12: This package is no longer supported.
+npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  Fo
+r CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support fo
+r other options.
+
+added 846 packages, and audited 847 packages in 4m
+
+255 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (2 moderate, 13 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+>> prisma generate
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+◇ injected env (0) from .env.local // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+◇ injected env (7) from .env.production // tip: ⌘ suppress logs { quiet: true }
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+
+✔ Generated Prisma Client (7.10.0) to .\src\generated\prisma in 640ms
+>> prisma db push
+◇ injected env (0) from .env // tip: ◈ secrets for agents [www.dotenvx.com]
+◇ injected env (0) from .env.local // tip: ⌘ override existing { override: true }
+◇ injected env (7) from .env.production // tip: ⌘ override existing { override: true }
+Loaded Prisma config from prisma.config.ts.
+
+┌─────────────────────────────────────────────────────────┐
+│  Update available 7.10.0 -> 8.0.0-rc.23                 │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+! unknown or unexpected option: --skip-generate
+
+Push the state from your Prisma schema to your database
+
+Usage
+
+  $ prisma db push [options]
+
+  The datasource URL configuration is read from the Prisma config file (e.g., prisma7.config.ts).
+
+Options
+
+           -h, --help   Display this help message
+             --config   Custom path to your Prisma config file
+             --schema   Custom path to your Prisma schema
+                 --url   Override the datasource URL from the Prisma config file
+   --accept-data-loss   Ignore data loss warnings
+        --force-reset   Force a reset of the database before push
+
+Examples
+
+  Push the Prisma schema state to the database
+  $ prisma db push
+
+  Specify a schema
+  $ prisma db push --schema=./schema.prisma
+
+  Ignore data loss warnings
+  $ prisma db push --accept-data-loss
+PS>TerminatingError(): "Loi o buoc 'prisma db push' (exit code 1)"
+LOI: Loi o buoc 'prisma db push' (exit code 1)
+Deploy LOI, NKDD-Report van dang TAT. Xem log: C:\quyhdp\logs\deploy_20261016_235345.log
+**********************
+Windows PowerShell transcript end
+End time: 20261016235804
+**********************

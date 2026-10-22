@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "hoangdinhreborn/bvkhanhhoi_dieuduong",
+  "pipelineDirectory": "bvkhanhhoi_dieuduong",
+  "workspaceDirectory": "bvkhanhhoi_dieuduong\\bvkhanhhoi_dieuduong",
+  "repositories": {
+    "hoangdinhreborn/bvkhanhhoi_dieuduong": {
+      "repositoryPath": "bvkhanhhoi_dieuduong\\bvkhanhhoi_dieuduong",
+      "lastRunOn": "10/14/2026 14:02:13 +07:00"
+    }
+  },
+  "lastRunOn": "10/19/2026 08:04:56 +07:00"
+}

@@ -1,0 +1,20 @@
+[Wed 10/21/2026 21:00:20.03] --------whoami-------- 
+dc01-bvkhanhhoi\quyhdp
+[Wed 10/21/2026 21:00:20.13] --------whoami-------- 
+[Wed 10/21/2026 21:00:20.15] Waiting for Runner.Listener.exe (7488) to complete 
+Runner.Listener.exe           7488                            0    105,492 K
+[Wed 10/21/2026 21:00:20.52] Process 7488 still running, check again after 1 second. 
+[Wed 10/21/2026 21:00:21.71] Process 7488 finished running 
+[Wed 10/21/2026 21:00:21.71] Sleep 1 more second to make sure process exited 
+[Wed 10/21/2026 21:00:22.77] Re-organize folders 
+[Wed 10/21/2026 21:00:22.88] move "C:\quyhdp\action-runner\bin" "C:\quyhdp\action-runner\bin.2.337.0" 
+        1 dir(s) moved.
+[Wed 10/21/2026 21:00:22.97] move "C:\quyhdp\action-runner\externals" "C:\quyhdp\action-runner\externals.2.337.0" 
+        1 dir(s) moved.
+[Wed 10/21/2026 21:00:22.99] Create junction bin folder 
+Junction created for C:\quyhdp\action-runner\bin <<===>> C:\quyhdp\action-runner\bin.2.338.0
+[Wed 10/21/2026 21:00:23.02] Create junction externals folder 
+Junction created for C:\quyhdp\action-runner\externals <<===>> C:\quyhdp\action-runner\externals.2.338.0
+[Wed 10/21/2026 21:00:23.05] Update succeed 
+[Wed 10/21/2026 21:00:23.06] update.finished file creation succeed 
+[Wed 10/21/2026 21:00:23.08] Rename "C:\quyhdp\action-runner\_diag\SelfUpdate-20261021-140018.log" to be "C:\quyhdp\action-runner\_diag\SelfUpdate-20261021-140018.log.succeed" 

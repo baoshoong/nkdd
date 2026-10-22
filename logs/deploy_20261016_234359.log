@@ -1,0 +1,33 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261016234359
+Username: DC01-BVKHANHHOI\hoalp
+RunAs User: DC01-BVKHANHHOI\hoalp
+Configuration Name: 
+Machine: SRV-APPCNTT (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -file  C:\quyhdp\deploy-forcedb.ps1 
+Process ID: 10880
+PSVersion: 5.1.26100.33438
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.33438
+BuildVersion: 10.0.26100.33438
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+>> git fetch
+From https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+ * branch            main       -> FETCH_HEAD
+>> git reset
+HEAD is now at eea263c Merge branch 'main' of https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+Commit: eea263c Merge branch 'main' of https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+>> backup db
+PS>TerminatingError(): "The term 'pg_dump' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+>> TerminatingError(): "The term 'pg_dump' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again."
+LOI: The term 'pg_dump' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+Deploy LOI, service NKDD-Report van dang TAT. Xem log: C:\quyhdp\logs\deploy_20261016_234359.log
+**********************
+Windows PowerShell transcript end
+End time: 20261016234410
+**********************

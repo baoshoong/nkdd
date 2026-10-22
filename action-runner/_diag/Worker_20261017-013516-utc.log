@@ -1,0 +1,2278 @@
+[2026-10-17 01:35:16Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-10-17 01:35:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:16Z INFO HostContext] Well known config file 'Credentials': 'C:\quyhdp\action-runner\.credentials'
+[2026-10-17 01:35:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:16Z INFO HostContext] Well known config file 'Runner': 'C:\quyhdp\action-runner\.runner'
+[2026-10-17 01:35:16Z INFO Worker] Version: 2.337.0
+[2026-10-17 01:35:16Z INFO Worker] Commit: 397b032cbf865e9c3ddfab89d533ec19325e1273
+[2026-10-17 01:35:16Z INFO Worker] Culture: en-US
+[2026-10-17 01:35:16Z INFO Worker] UI Culture: en-US
+[2026-10-17 01:35:16Z INFO Worker] Waiting to receive the job message from the channel.
+[2026-10-17 01:35:16Z INFO ProcessChannel] Receiving message of length 24608, with hash 'e7d3636f5e59665958f0211decafc1ff28018a129f4aab2fa1f97b4eec76b928'
+[2026-10-17 01:35:16Z INFO Worker] Message received.
+[2026-10-17 01:35:17Z INFO Worker] Job message:
+ {
+  "defaults": [
+    {
+      "type": 2,
+      "file": 1,
+      "line": 17,
+      "col": 7,
+      "map": [
+        {
+          "key": {
+            "type": 0,
+            "file": 1,
+            "line": 17,
+            "col": 7,
+            "lit": "run"
+          },
+          "value": {
+            "type": 2,
+            "file": 1,
+            "line": 18,
+            "col": 9,
+            "map": [
+              {
+                "key": {
+                  "type": 0,
+                  "file": 1,
+                  "line": 18,
+                  "col": 9,
+                  "lit": "shell"
+                },
+                "value": {
+                  "type": 0,
+                  "file": 1,
+                  "line": 18,
+                  "col": 16,
+                  "lit": "powershell"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "fileTable": [
+    ".github/workflows/deploy.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 15,
+        "lit": "Deploy"
+      },
+      "contextName": "__run",
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 22,
+        "col": 11,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 22,
+              "col": 11,
+              "lit": "GH_TOKEN"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 22,
+              "col": 21,
+              "expr": "github.token"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 14,
+              "lit": "$ErrorActionPreference = \"Stop\"\n$env:GIT_TERMINAL_PROMPT = \"0\"\nSet-Location C:\\quyhdp\\nkdd-report\\bvkhanhhoi_dieuduong\ngit config --global --add safe.directory C:/quyhdp/nkdd-report/bvkhanhhoi_dieuduong\n\nWrite-Host \"=== git sync ===\"\n$b64 = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(\"x-access-token:$($env:GH_TOKEN)\"))\ngit -c \"http.extraheader=AUTHORIZATION: basic $b64\" fetch origin main\nif ($LASTEXITCODE -ne 0) { throw \"git fetch failed\" }\ngit reset --hard origin/main\nif ($LASTEXITCODE -ne 0) { throw \"git reset failed\" }\ngit log -1 --format=\"Deployed commit: %h %s\"\n\nWrite-Host \"=== stopping service ===\"\nsc.exe stop NKDD-Report | Out-Null\nGet-CimInstance Win32_Process |\n  Where-Object { $_.Name -in @(\"node.exe\",\"npm.cmd\",\"cmd.exe\") -and $_.CommandLine -like \"*bvkhanhhoi_dieuduong*\" } |\n  ForEach-Object { Write-Host \"Kill $($_.ProcessId)\"; Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }\nfor ($i = 0; $i -lt 10; $i++) {\n  if ((Get-Service NKDD-Report).Status -eq \"Stopped\") { break }\n  Start-Sleep -Seconds 2\n}\nWrite-Host \"Service status: $((Get-Service NKDD-Report).Status)\"\nStart-Sleep -Seconds 3\n\ntry {\n  Write-Host \"=== npm ci ===\"\n  npm ci\n  if ($LASTEXITCODE -ne 0) { throw \"npm ci failed\" }\n\n  Write-Host \"=== prisma generate ===\"\n  npx prisma generate\n  if ($LASTEXITCODE -ne 0) { throw \"prisma generate failed\" }\n\n  Write-Host \"=== build ===\"\n  npm run build\n  if ($LASTEXITCODE -ne 0) { throw \"build failed\" }\n}\nfinally {\n  Write-Host \"=== starting service ===\"\n  Start-Service \"NKDD-Report\"\n}\n\nStart-Sleep -Seconds 10\nnetstat -ano | findstr :5433\nGet-Service NKDD-Report\n"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "113f96f6-63d6-457d-bf27-d2efe088497e",
+      "name": "__run"
+    }
+  ],
+  "variables": {
+    "Actions.EnableHttpRedirects": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode16Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "DistributedTask.DetailUntarFailure": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnableJobServerQueueTelemetry": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode16": {
+      "value": "true"
+    },
+    "DistributedTask.ForceGithubJavascriptActionsToNode20": {
+      "value": "true"
+    },
+    "DistributedTask.LogTemplateErrorsAsDebugMessages": {
+      "value": "true"
+    },
+    "DistributedTask.MarkJobAsFailedOnWorkerCrash": {
+      "value": "true"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.UseActionArchiveCache": {
+      "value": "true"
+    },
+    "DistributedTask.UseWhich2": {
+      "value": "true"
+    },
+    "RunService.FixEmbeddedIssues": {
+      "value": "true"
+    },
+    "actions.runner.requirenode24": {
+      "value": "true"
+    },
+    "actions.runner.usenode24bydefault": {
+      "value": "true"
+    },
+    "actions.runner.warnonnode20": {
+      "value": "true"
+    },
+    "actions_add_check_run_id_to_job_context": {
+      "value": "true"
+    },
+    "actions_batch_action_resolution": {
+      "value": "false"
+    },
+    "actions_cache_mode": {
+      "value": "write"
+    },
+    "actions_container_action_runner_temp": {
+      "value": "true"
+    },
+    "actions_display_helpful_actions_download_errors": {
+      "value": "true"
+    },
+    "actions_runner_allow_artifacts_file": {
+      "value": "true"
+    },
+    "actions_runner_compare_workflow_parser": {
+      "value": "false"
+    },
+    "actions_runner_deprecate_linux_arm32": {
+      "value": "true"
+    },
+    "actions_runner_emit_composite_markers": {
+      "value": "true"
+    },
+    "actions_runner_kill_linux_arm32": {
+      "value": "true"
+    },
+    "actions_runner_node20_removal_date": {
+      "value": "September 23rd, 2026"
+    },
+    "actions_runner_node24_default_date": {
+      "value": "June 16th, 2026"
+    },
+    "actions_self_repository": {
+      "value": "true"
+    },
+    "actions_service_container_command": {
+      "value": "true"
+    },
+    "actions_set_orchestration_id_env_for_actions": {
+      "value": "true"
+    },
+    "actions_skip_retry_complete_job_upon_known_errors": {
+      "value": "true"
+    },
+    "actions_snapshot_preflight_hosted_runner_check": {
+      "value": "false"
+    },
+    "actions_snapshot_preflight_image_gen_pool_check": {
+      "value": "false"
+    },
+    "actions_use_bearer_token_for_codeload": {
+      "value": "false"
+    },
+    "actions_uses_cache_service_v2": {
+      "value": "true"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.from_run_service": {
+      "value": "true"
+    },
+    "system.github.job": {
+      "value": "deploy"
+    },
+    "system.github.launch_endpoint": {
+      "value": "https://launch.actions.githubusercontent.com"
+    },
+    "system.github.results_endpoint": {
+      "value": "https://results-receiver.actions.githubusercontent.com/"
+    },
+    "system.github.results_upload_with_sdk": {
+      "value": "true"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\"}"
+    },
+    "system.orchestrationId": {
+      "value": "8d964b85-1313-88fb-824e-22d491d2dca8.deploy.__default"
+    },
+    "system.phaseDisplayName": {
+      "value": "deploy"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "system.runnerEnvironment": {
+      "value": "self-hosted"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "RunnerJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "actions",
+    "version": 0,
+    "planId": "8d964b85-1313-88fb-824e-22d491d2dca8",
+    "planGroup": null,
+    "artifactUri": null,
+    "artifactLocation": null,
+    "definition": null,
+    "owner": null
+  },
+  "timeline": {
+    "id": "8d964b85-1313-88fb-824e-22d491d2dca8",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "bbae32b7-c4e5-50f9-a76a-042d56a548b0",
+  "jobDisplayName": "deploy",
+  "jobName": "__default",
+  "requestId": 0,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "",
+          "ServerName": "",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/MgiSGKq5CjqGC0dfCeL03UfhThJGjg9y9EqN46WNqnxZMs4gTJ/",
+          "FeedStreamUrl": "wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock",
+          "ResultsServiceUrl": "https://results-receiver.actions.githubusercontent.com/",
+          "PipelinesServiceUrl": "https://pipelinesghubeus7.actions.githubusercontent.com/MgiSGKq5CjqGC0dfCeL03UfhThJGjg9y9EqN46WNqnxZMs4gTJ/",
+          "GenerateIdTokenUrl": "",
+          "ConnectivityChecks": "[\"https://broker.actions.githubusercontent.com/health\",\"https://token.actions.githubusercontent.com/ready\",\"https://run.actions.githubusercontent.com/health\"]",
+          "ConnectivityAndDNSChecks": ""
+        },
+        "name": "SystemVssConnection",
+        "url": "https://run-actions-1-azure-eastus.actions.githubusercontent.com/19/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": "***"
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/main"
+        },
+        {
+          "k": "sha",
+          "v": "ef52ac83932cf331bd9e5adebff62e8fada5526b"
+        },
+        {
+          "k": "repository",
+          "v": "hoangdinhreborn/bvkhanhhoi_dieuduong"
+        },
+        {
+          "k": "repository_owner",
+          "v": "hoangdinhreborn"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "325204574"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong.git"
+        },
+        {
+          "k": "run_id",
+          "v": "38991492234"
+        },
+        {
+          "k": "run_number",
+          "v": "9"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "1"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "private"
+        },
+        {
+          "k": "actor_id",
+          "v": "325204574"
+        },
+        {
+          "k": "actor",
+          "v": "hoangdinhreborn"
+        },
+        {
+          "k": "workflow",
+          "v": "Deploy"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "main"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "ef52ac83932cf331bd9e5adebff62e8fada5526b"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "eea263c07e807ea40822691bf3abb05afbb206b9"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "hoangquy3001@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "hoangdinhreborn"
+                              },
+                              {
+                                "k": "username",
+                                "v": "hoangdinhreborn"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "hoangquy3001@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "hoangdinhreborn"
+                              },
+                              {
+                                "k": "username",
+                                "v": "hoangdinhreborn"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "ef52ac83932cf331bd9e5adebff62e8fada5526b"
+                        },
+                        {
+                          "k": "message",
+                          "v": "update: seed.ts"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2026-10-17T08:34:46+07:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "1b97d11c9575cd91f8ece522111d5d446aef90ad"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong/commit/ef52ac83932cf331bd9e5adebff62e8fada5526b"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong/compare/eea263c07e80...ef52ac83932c"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "hoangquy3001@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "hoangdinhreborn"
+                          },
+                          {
+                            "k": "username",
+                            "v": "hoangdinhreborn"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "hoangquy3001@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "hoangdinhreborn"
+                          },
+                          {
+                            "k": "username",
+                            "v": "hoangdinhreborn"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "ef52ac83932cf331bd9e5adebff62e8fada5526b"
+                    },
+                    {
+                      "k": "message",
+                      "v": "update: seed.ts"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2026-10-17T08:34:46+07:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "1b97d11c9575cd91f8ece522111d5d446aef90ad"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong/commit/ef52ac83932cf331bd9e5adebff62e8fada5526b"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "hoangquy3001@gmail.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "hoangdinhreborn"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/main"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1791814684.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": null
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "hoangdinhreborn/bvkhanhhoi_dieuduong"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_pull_requests",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": false
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong"
+                    },
+                    {
+                      "k": "id",
+                      "v": 1415702577.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "TypeScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": null
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "main"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "bvkhanhhoi_dieuduong"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOVGHoMQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/325204574?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "hoangquy3001@gmail.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/hoangdinhreborn"
+                          },
+                          {
+                            "k": "id",
+                            "v": 325204574.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "hoangdinhreborn"
+                          },
+                          {
+                            "k": "name",
+                            "v": "hoangdinhreborn"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOE2I6Xg"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/hoangdinhreborn/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/hoangdinhreborn"
+                          },
+                          {
+                            "k": "user_view_type",
+                            "v": "public"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": true
+                    },
+                    {
+                      "k": "pull_request_creation_policy",
+                      "v": "all"
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1792200908.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 680.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:hoangdinhreborn/bvkhanhhoi_dieuduong.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2026-10-16T15:54:24Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/repos/hoangdinhreborn/bvkhanhhoi_dieuduong"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "private"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/325204574?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/hoangdinhreborn"
+                    },
+                    {
+                      "k": "id",
+                      "v": 325204574.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "hoangdinhreborn"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOE2I6Xg"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/hoangdinhreborn/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/hoangdinhreborn"
+                    },
+                    {
+                      "k": "user_view_type",
+                      "v": "public"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "workflow_ref",
+          "v": "hoangdinhreborn/bvkhanhhoi_dieuduong/.github/workflows/deploy.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "ef52ac83932cf331bd9e5adebff62e8fada5526b"
+        },
+        {
+          "k": "repository_id",
+          "v": "1415702577"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "hoangdinhreborn"
+        }
+      ]
+    },
+    "inputs": {
+      "t": 2
+    },
+    "job": {
+      "t": 2,
+      "d": [
+        {
+          "k": "check_run_id",
+          "v": 117274649137.0
+        },
+        {
+          "k": "workflow_ref",
+          "v": "hoangdinhreborn/bvkhanhhoi_dieuduong/.github/workflows/deploy.yml@refs/heads/main"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "ef52ac83932cf331bd9e5adebff62e8fada5526b"
+        },
+        {
+          "k": "workflow_repository",
+          "v": "hoangdinhreborn/bvkhanhhoi_dieuduong"
+        },
+        {
+          "k": "workflow_file_path",
+          "v": ".github/workflows/deploy.yml"
+        }
+      ]
+    },
+    "matrix": null,
+    "needs": {
+      "t": 2
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    },
+    "vars": {
+      "t": 2
+    }
+  },
+  "billingOwnerId": "U_kgDOE2I6Xg"
+}
+[2026-10-17 01:35:17Z INFO JobRunner] Job ID bbae32b7-c4e5-50f9-a76a-042d56a548b0
+[2026-10-17 01:35:17Z INFO ConfigurationStore] currentAssemblyLocation: C:\quyhdp\action-runner\bin\Runner.Worker.dll
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] binPath: C:\quyhdp\action-runner\bin
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] RootFolder: C:\quyhdp\action-runner
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'Runner': 'C:\quyhdp\action-runner\.runner'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] ConfigFilePath: C:\quyhdp\action-runner\.runner
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\quyhdp\action-runner\.runner_migrated'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] MigratedConfigFilePath: C:\quyhdp\action-runner\.runner_migrated
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'Credentials': 'C:\quyhdp\action-runner\.credentials'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] CredFilePath: C:\quyhdp\action-runner\.credentials
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\quyhdp\action-runner\.credentials_migrated'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] MigratedCredFilePath: C:\quyhdp\action-runner\.credentials_migrated
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'Service': 'C:\quyhdp\action-runner\.service'
+[2026-10-17 01:35:17Z INFO ConfigurationStore] ServiceConfigFilePath: C:\quyhdp\action-runner\.service
+[2026-10-17 01:35:17Z INFO ConfigurationStore] Read setting file: 410 chars
+[2026-10-17 01:35:17Z INFO JobRunner] Initializing launch client
+[2026-10-17 01:35:17Z INFO JobServerQueue] Initializing results client
+[2026-10-17 01:35:17Z INFO ResultServer] Creating websocket client ...wss://results-receiver.actions.githubusercontent.com/_ws/ingest.sock
+[2026-10-17 01:35:17Z INFO ResultServer] Attempting to start websocket client with delay 00:00:00.
+[2026-10-17 01:35:17Z INFO JobServerQueue] Start process web console line queue.
+[2026-10-17 01:35:17Z INFO JobServerQueue] Start process file upload queue.
+[2026-10-17 01:35:17Z INFO JobServerQueue] Start results file upload queue.
+[2026-10-17 01:35:17Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-10-17 01:35:17Z INFO JobServerQueue] Start process timeline update queue.
+[2026-10-17 01:35:17Z INFO ExecutionContext] Initializing Job context
+[2026-10-17 01:35:17Z INFO ExecutionContext] Initialize GitHub context
+[2026-10-17 01:35:17Z INFO ExecutionContext] Initialize Env context
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 01:35:17Z INFO JobRunner] Starting the job execution context.
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO JobRunner] Validating directory permissions for: 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Tools': 'C:\quyhdp\action-runner\_work\_tool'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Temp': 'C:\quyhdp\action-runner\_work\_temp'
+[2026-10-17 01:35:17Z INFO JobRunner] Getting job extension.
+[2026-10-17 01:35:17Z INFO JobRunner] Initialize job. Getting all job steps.
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'Credentials': 'C:\quyhdp\action-runner\.credentials'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known config file 'SetupInfo': 'C:\quyhdp\action-runner\.setup_info'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\quyhdp\action-runner\_work\_PipelineMapping\hoangdinhreborn/bvkhanhhoi_dieuduong\PipelineFolder.json
+[2026-10-17 01:35:17Z INFO PipelineDirectoryManager] Updating job run properties.
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO JobExtension] Downloading actions
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Actions': 'C:\quyhdp\action-runner\_work\_actions'
+[2026-10-17 01:35:17Z INFO JobExtension] Adding .
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 01:35:17Z INFO JobExtension] Total accessible running process: 158.
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO JobExtension] Start checking server connectivity.
+[2026-10-17 01:35:17Z INFO JobExtension] Check server connectivity for https://broker.actions.githubusercontent.com/health.
+[2026-10-17 01:35:17Z INFO JobExtension] Check server connectivity for https://token.actions.githubusercontent.com/ready.
+[2026-10-17 01:35:17Z INFO JobExtension] Check server connectivity for https://run.actions.githubusercontent.com/health.
+[2026-10-17 01:35:17Z INFO JobExtension] Start checking service connectivity in background.
+[2026-10-17 01:35:17Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "71d66ae3-fc12-4a78-9592-8539dda0736e",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-10-17T01:35:17.574736Z",
+  "finishTime": "2026-10-17T01:35:17.7422415Z"
+}.
+[2026-10-17 01:35:17Z INFO JobRunner] Total job steps: 1.
+[2026-10-17 01:35:17Z INFO JobRunner] Run all job steps.
+[2026-10-17 01:35:17Z INFO DapDebugger] DapDebugger initialized
+[2026-10-17 01:35:17Z INFO StepsRunner] Processing step: DisplayName='Deploy'
+[2026-10-17 01:35:17Z INFO StepsRunner] Evaluating: success()
+[2026-10-17 01:35:17Z INFO StepsRunner] Result: true
+[2026-10-17 01:35:17Z INFO StepsRunner] Starting the step.
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO StepsRunner] Which2: 'chcp'
+[2026-10-17 01:35:17Z INFO StepsRunner] Location: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\system32\chcp.COM'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Working directory: 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper] Process started with process id 9468, waiting for process exit.
+[2026-10-17 01:35:17Z INFO Worker] Listening for cancel message from the channel.
+[2026-10-17 01:35:17Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-17 01:35:17Z INFO ProcessInvokerWrapper] Finished process 9468 with exit code 0, and elapsed time 00:00:00.0356904.
+[2026-10-17 01:35:17Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Temp': 'C:\quyhdp\action-runner\_work\_temp'
+[2026-10-17 01:35:17Z INFO ExecutionContext] Write event payload to C:\quyhdp\action-runner\_work\_temp\_github_workflow\event.json
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:17Z INFO HostContext] Well known directory 'Temp': 'C:\quyhdp\action-runner\_work\_temp'
+[2026-10-17 01:35:17Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateArtifactsFileCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ArtifactsListFileCommand, Runner.Worker
+[2026-10-17 01:35:17Z INFO ArtifactsListFileCommand] Wrote $GITHUB_ARTIFACTS_LIST with 0 subject(s) to 'C:\quyhdp\action-runner\_work\_temp\_runner_file_commands\artifacts_list_1101fb82-7b89-455f-afdb-dade6c3b9945'
+[2026-10-17 01:35:17Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command set-env
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command set-output
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command save-state
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command add-path
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command warning
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command error
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command notice
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command debug
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command group
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2026-10-17 01:35:17Z INFO ActionCommandManager] Register action command extension for command echo
+[2026-10-17 01:35:18Z INFO ScriptHandler] Which2: 'powershell'
+[2026-10-17 01:35:18Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-10-17 01:35:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:18Z INFO HostContext] Well known directory 'Temp': 'C:\quyhdp\action-runner\_work\_temp'
+[2026-10-17 01:35:18Z INFO ScriptHandler] Which2: 'powershell'
+[2026-10-17 01:35:18Z INFO ScriptHandler] Location: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper] Starting process:
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   File name: 'C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.EXE'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Arguments: '-command ". 'C:\quyhdp\action-runner\_work\_temp\d561182e-4134-4e43-9557-657feab59346.ps1'"'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Working directory: 'C:\quyhdp\action-runner\_work\bvkhanhhoi_dieuduong\bvkhanhhoi_dieuduong'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2026-10-17 01:35:18Z INFO ProcessInvokerWrapper] Process started with process id 11124, waiting for process exit.
+[2026-10-17 01:35:19Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-17 01:35:19Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\quyhdp\action-runner\_diag\blocks\8d964b85-1313-88fb-824e-22d491d2dca8_71d66ae3-fc12-4a78-9592-8539dda0736e.1
+[2026-10-17 01:35:19Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2026-10-17 01:35:20Z INFO ResultServer] Successfully started websocket client.
+[2026-10-17 01:35:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '71d66ae3-fc12-4a78-9592-8539dda0736e', success rate: 1/1.
+[2026-10-17 01:35:20Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:35:21Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2026-10-17 01:35:23Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:35:24Z INFO JobServerQueue] Tried to upload 1 file(s) to results, success rate: 1/1.
+[2026-10-17 01:35:27Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:27Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:27Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:35:32Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:35:37Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:37Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:37Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:47Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:47Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:47Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:35:57Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:35:57Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:35:57Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:36:07Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:36:07Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:36:07Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:36:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:36:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:36:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:36:26Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:36:27Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:36:27Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:36:27Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:36:27Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:36:28Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:36:29Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:36:33Z INFO JobServerQueue] Stop aggressive process web console line queue.
+[2026-10-17 01:36:37Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:36:37Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:36:37Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:36:41Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:36:47Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:36:47Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:36:47Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:36:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:36:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:36:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:37:07Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:37:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:37:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:37:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:37:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:37:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:37:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:37:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:37:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:37:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:37:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:37:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:37:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:37:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:37:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:37:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:37:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:37:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:37:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:38:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:38:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:38:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:38:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:38:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:38:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:38:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:38:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:38:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:38:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:38:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:38:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:38:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:38:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:38:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:38:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:38:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:38:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:38:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:39:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:39:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:39:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:39:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:39:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:39:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:39:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:39:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:39:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:39:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:39:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:39:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:39:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:39:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:39:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:39:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:39:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:39:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:40:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:40:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:40:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:40:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:40:16Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:40:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:40:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:40:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:40:21Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 01:40:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:40:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:40:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:40:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:40:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:40:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:40:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:40:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:40:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:40:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:40:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:40:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:41:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:41:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:41:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:41:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:41:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:41:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:41:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:41:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:41:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:41:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:41:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:41:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:41:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:41:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:41:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:41:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:41:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:41:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:42:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:42:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:42:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:42:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:42:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:42:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:42:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:42:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:42:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:42:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:42:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:42:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:42:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:42:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:42:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:42:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:42:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:42:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:43:09Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:43:09Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:43:09Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:43:19Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:43:19Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:43:19Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:43:29Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:43:29Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:43:29Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:43:39Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:43:39Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:43:39Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:43:49Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:43:49Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:43:49Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:43:59Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:43:59Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:43:59Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:44:09Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:44:09Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:44:09Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:44:19Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:44:19Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:44:19Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:44:29Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:44:29Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:44:29Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:44:39Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:44:39Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:44:39Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:44:49Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:44:49Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:44:49Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:44:59Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:44:59Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:44:59Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:45:09Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:45:09Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:45:09Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:45:19Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:45:19Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:45:19Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:45:29Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:45:29Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:45:29Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:45:39Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:45:39Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:45:39Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:45:49Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:45:49Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:45:49Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:46:02Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:46:02Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:46:02Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:46:12Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:46:12Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:46:12Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:46:25Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:46:25Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:46:25Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:46:35Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:46:35Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:46:35Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:46:45Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:46:45Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:46:45Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:46:55Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:46:55Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:46:55Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:47:05Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:47:05Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:47:05Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:47:15Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:47:15Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:47:15Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:47:25Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:47:25Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:47:25Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:47:35Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:47:35Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:47:35Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:47:45Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:47:45Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:47:45Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:47:55Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:47:55Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:47:55Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:48:05Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:48:05Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:48:05Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:48:15Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:48:15Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:48:15Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:48:25Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:48:25Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:48:25Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:48:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:48:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:48:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:48:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:48:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:48:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:48:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:48:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:48:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:49:06Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:49:06Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:49:06Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:49:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:49:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:49:16Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:49:26Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:49:26Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:49:26Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:49:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:49:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:49:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:49:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:49:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:49:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:49:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:49:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:49:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:50:06Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:50:06Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:50:06Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:50:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:50:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:50:16Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:50:26Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:50:26Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:50:26Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:50:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:50:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:50:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:50:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:50:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:50:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:50:59Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:50:59Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:50:59Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:51:09Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:51:09Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:51:09Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:51:19Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:51:19Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:51:19Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:51:29Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:51:29Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:51:29Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:51:42Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:51:42Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:51:42Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:51:52Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:51:52Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:51:52Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:52:02Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:52:02Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:52:02Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:52:12Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:52:12Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:52:12Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:52:22Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:52:22Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:52:22Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:52:32Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:52:32Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:52:32Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:52:42Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:52:42Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:52:42Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:52:52Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:52:52Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:52:52Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:53:02Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:53:02Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:53:02Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:53:12Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:53:12Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:53:12Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:53:22Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:53:22Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:53:22Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:53:32Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:53:32Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:53:32Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:53:42Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:53:42Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:53:42Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:53:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:53:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:53:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:54:06Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:54:06Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:54:06Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:54:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:54:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:54:16Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:54:26Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:54:26Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:54:26Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:54:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:54:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:54:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:54:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:54:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:54:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:54:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:54:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:54:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:55:06Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:55:06Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:55:06Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:55:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:55:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:55:16Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:55:26Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:55:26Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:55:26Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:55:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:55:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:55:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:55:47Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:55:47Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:55:47Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:55:57Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:55:57Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:55:57Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:56:07Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:56:07Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:56:07Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:56:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:56:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:56:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:56:27Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:56:27Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:56:27Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:56:37Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:56:37Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:56:37Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:56:47Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:56:47Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:56:47Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:56:57Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:56:57Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:56:57Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:57:07Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:57:07Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:57:07Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:57:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:57:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:57:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:57:27Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:57:27Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:57:27Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:57:37Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:57:37Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:57:37Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:57:47Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:57:47Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:57:47Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:57:57Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:57:57Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:57:57Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:58:07Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:58:07Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:58:07Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:58:17Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:58:17Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:58:17Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:58:27Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:58:27Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:58:27Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:58:39Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:58:39Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:58:39Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:58:49Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:58:49Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:58:49Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:58:59Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:58:59Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:58:59Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:59:11Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:59:11Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:59:11Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:59:21Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:59:21Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:59:21Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:59:31Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:59:31Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:59:31Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:59:41Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:59:41Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:59:41Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 01:59:51Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 01:59:51Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 01:59:51Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:00:01Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:00:01Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:00:01Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:00:11Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:00:11Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:00:11Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:00:25Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:00:25Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:00:25Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:00:35Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:00:35Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:00:35Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:00:45Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:00:45Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:00:45Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:00:55Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:00:55Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:00:55Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:01:05Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:01:05Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:01:05Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:01:15Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:01:15Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:01:15Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:01:25Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:01:25Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:01:25Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:01:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:01:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:01:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:01:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:01:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:01:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:01:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:01:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:01:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:02:06Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:02:06Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:02:06Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:02:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:02:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:02:16Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:02:26Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:02:26Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:02:26Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:02:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:02:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:02:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:02:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:02:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:02:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:02:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:02:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:02:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:03:06Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:03:06Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:03:06Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:03:16Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:03:16Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:03:16Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:03:26Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:03:26Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:03:26Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:03:36Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:03:36Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:03:36Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:03:46Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:03:46Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:03:46Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:03:56Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:03:56Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:03:56Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:04:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:04:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:04:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:04:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:04:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:04:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:04:28Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:04:28Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:04:28Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:04:38Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:04:38Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:04:38Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:04:48Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:04:48Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:04:48Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:04:58Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:04:58Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:04:58Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:05:08Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:05:08Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:05:08Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:05:14Z INFO ProcessChannel] Receiving message of length 0, with hash 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+[2026-10-17 02:05:14Z INFO Worker] Cancellation/Shutdown message received.
+[2026-10-17 02:05:14Z INFO StepsRunner] Evaluating: success()
+[2026-10-17 02:05:14Z INFO StepsRunner] Result: false
+[2026-10-17 02:05:14Z INFO StepsRunner] Cancel current running step.
+[2026-10-17 02:05:14Z INFO ProcessInvokerWrapper] Sending CTRL_C to process 11124.
+[2026-10-17 02:05:14Z INFO ProcessInvokerWrapper] Successfully send CTRL_C to process 11124.
+[2026-10-17 02:05:14Z INFO ProcessInvokerWrapper] Waiting for process exit or 7.5 seconds after CTRL_C signal fired.
+[2026-10-17 02:05:14Z INFO ProcessInvokerWrapper] Ignore Ctrl+C to current process.
+[2026-10-17 02:05:18Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:05:18Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:05:18Z INFO HostContext] Well known directory 'Work': 'C:\quyhdp\action-runner\_work'
+[2026-10-17 02:05:21Z INFO ProcessInvokerWrapper] Process did not honor CTRL_C signal within 7.5 seconds.
+[2026-10-17 02:05:21Z INFO ProcessInvokerWrapper] Sending CTRL_BREAK to process 11124.
+[2026-10-17 02:05:22Z INFO ProcessInvokerWrapper] Ignore Ctrl+Break to current process.
+[2026-10-17 02:05:22Z INFO ProcessInvokerWrapper] Successfully send CTRL_BREAK to process 11124.
+[2026-10-17 02:05:22Z INFO ProcessInvokerWrapper] Waiting for process exit or 2.5 seconds after CTRL_BREAK signal fired.
+[2026-10-17 02:05:22Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Process did not honor CTRL_BREAK signal within 2.5 seconds.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Kill entire process tree since both cancel and terminate signal has been ignored by the target process.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Scan all processes to find relationship between all processes.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Find all child processes of process '11124'.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Kill process '11124'.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Process Cancellation finished.
+[2026-10-17 02:05:24Z INFO ProcessInvokerWrapper] Finished process 11124 with exit code -1, and elapsed time 00:30:06.7172177.
+[2026-10-17 02:05:24Z INFO CreateStepSummaryCommand] Step Summary file (C:\quyhdp\action-runner\_work\_temp\_runner_file_commands\step_summary_1101fb82-7b89-455f-afdb-dade6c3b9945) is empty; skipping attachment upload
+[2026-10-17 02:05:24Z INFO CreateArtifactsFileCommand] Processing $GITHUB_ARTIFACTS file 'C:\quyhdp\action-runner\_work\_temp\_runner_file_commands\artifacts_1101fb82-7b89-455f-afdb-dade6c3b9945'
+[2026-10-17 02:05:24Z INFO CreateArtifactsFileCommand] $GITHUB_ARTIFACTS file is empty; nothing to process.
+[2026-10-17 02:05:24Z ERR  StepsRunner] Caught cancellation exception from step: System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at GitHub.Runner.Sdk.ProcessInvoker.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Common.ProcessInvokerWrapper.ExecuteAsync(String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Channel`1 redirectStandardIn, Boolean inheritConsoleHandler, Boolean keepStandardInOpen, Boolean highPriorityProcess, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.Handlers.DefaultStepHost.ExecuteAsync(IExecutionContext context, String workingDirectory, String fileName, String arguments, IDictionary`2 environment, Boolean requireExitCodeZero, Encoding outputEncoding, Boolean killProcessOnCancel, Boolean inheritConsoleHandler, String standardInInput, CancellationToken cancellationToken)
+   at GitHub.Runner.Worker.Handlers.ScriptHandler.RunAsync(ActionRunStage stage)
+   at GitHub.Runner.Worker.ActionRunner.RunAsync()
+   at GitHub.Runner.Worker.StepsRunner.RunStepAsync(IStep step, CancellationToken jobCancellationToken)
+[2026-10-17 02:05:24Z INFO StepsRunner] Step result: Canceled
+[2026-10-17 02:05:24Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "powershell",
+  "type": "run",
+  "stage": "Main",
+  "stepId": "113f96f6-63d6-457d-bf27-d2efe088497e",
+  "stepContextName": "__run",
+  "result": "canceled",
+  "errorMessages": [
+    "The operation was canceled."
+  ],
+  "executionTimeInSeconds": 1808,
+  "startTime": "2026-10-17T01:35:17.774365Z",
+  "finishTime": "2026-10-17T02:05:24.8345449Z"
+}.
+[2026-10-17 02:05:24Z INFO StepsRunner] No need for updating job result with current step result 'Canceled'.
+[2026-10-17 02:05:24Z INFO StepsRunner] Current state: job state = 'Canceled'
+[2026-10-17 02:05:24Z INFO JobRunner] Finalize job.
+[2026-10-17 02:05:24Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:05:24Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:05:24Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 02:05:24Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:05:24Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:05:24Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 02:05:24Z INFO JobExtension] Initialize Env context
+[2026-10-17 02:05:24Z INFO JobExtension] Initialize steps context
+[2026-10-17 02:05:24Z INFO JobExtension] Total accessible running process: 168.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 2568 (svchost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 4696 (powershell)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 2828 (conhost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 8956 (SearchProtocolHost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 8512 (WUDFHost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 7812 (ctfmon)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 2796 (ShellExperienceHost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 10224 (RuntimeBroker)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 10732 (smartscreen)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 7908 (powershell)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 10672 (conhost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 8704 (OpenConsole)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 6856 (WindowsTerminal)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 9064 (SearchFilterHost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 9688 (SearchFilterHost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 2576 (svchost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 9544 (svchost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 8300 (Servy.Service)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Inspecting process environment variables. PID: 7004 (conhost)
+[2026-10-17 02:05:24Z WARN JobExtension] Ignore exception during read process environment variables: Access is denied.
+[2026-10-17 02:05:24Z INFO JobExtension] Wait for all connectivity checks to finish.
+[2026-10-17 02:05:24Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://broker.actions.githubusercontent.com/health",
+  "endpointIPs": null,
+  "startTime": "2026-10-17T01:35:17.7073788Z",
+  "statusCode": "http_OK",
+  "requestId": "D0A7:ABF74:67D7889:69C4861:6AD2D0D7",
+  "httpRequestDurationInMs": 2816,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-10-17 02:05:24Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://token.actions.githubusercontent.com/ready",
+  "endpointIPs": null,
+  "startTime": "2026-10-17T01:35:17.7357946Z",
+  "statusCode": "http_NoContent",
+  "requestId": "D0A8:3C2B4:25DBD87:295714E:6AD2D0D7",
+  "httpRequestDurationInMs": 2605,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-10-17 02:05:24Z INFO JobExtension] Connectivity check result: {
+  "endpointUrl": "https://run.actions.githubusercontent.com/health",
+  "endpointIPs": null,
+  "startTime": "2026-10-17T01:35:17.7362744Z",
+  "statusCode": "http_OK",
+  "requestId": "D0A9:4F12:6624B98:6812018:6AD2D0D7",
+  "httpRequestDurationInMs": 2801,
+  "dnsResolutionDurationInMs": 0,
+  "dnsError": null
+}
+[2026-10-17 02:05:24Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "d23a4083-cdff-49cb-9805-b05c935ae851",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2026-10-17T02:05:24.8688149Z",
+  "finishTime": "2026-10-17T02:05:24.9212065Z"
+}.
+[2026-10-17 02:05:24Z INFO JobRunner] Job result after all job steps finish: Canceled
+[2026-10-17 02:05:24Z INFO JobRunner] Completing the job execution context.
+[2026-10-17 02:05:24Z INFO JobRunner] Shutting down the job server queue.
+[2026-10-17 02:05:24Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2026-10-17 02:05:25Z INFO JobServerQueue] All queue process task stopped.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record '113f96f6-63d6-457d-bf27-d2efe088497e', success rate: 1/1.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'd23a4083-cdff-49cb-9805-b05c935ae851', success rate: 1/1.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Web console line queue drained.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2026-10-17 02:05:25Z INFO JobServerQueue] File upload queue drained.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Starting results-based upload queue...
+[2026-10-17 02:05:25Z INFO JobServerQueue] Uploading 3 file(s) in one shot through results service.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-17 02:05:25Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\quyhdp\action-runner\_diag\blocks\8d964b85-1313-88fb-824e-22d491d2dca8_113f96f6-63d6-457d-bf27-d2efe088497e.1
+[2026-10-17 02:05:27Z INFO JobServerQueue] Got a step log file to send to results service.
+[2026-10-17 02:05:27Z INFO JobServerQueue] Starting upload of step log file to results service ResultsLog, C:\quyhdp\action-runner\_diag\blocks\8d964b85-1313-88fb-824e-22d491d2dca8_d23a4083-cdff-49cb-9805-b05c935ae851.1
+[2026-10-17 02:05:28Z INFO JobServerQueue] Got a job log file to send to results service.
+[2026-10-17 02:05:28Z INFO JobServerQueue] Starting upload of job log file to results service ResultsLog, C:\quyhdp\action-runner\_diag\blocks\8d964b85-1313-88fb-824e-22d491d2dca8_bbae32b7-c4e5-50f9-a76a-042d56a548b0.1
+[2026-10-17 02:05:29Z INFO JobServerQueue] Tried to upload 3 file(s) to results, success rate: 3/3.
+[2026-10-17 02:05:29Z INFO JobServerQueue] Results upload queue drained.
+[2026-10-17 02:05:29Z INFO JobServerQueue] Timeline update queue drained.
+[2026-10-17 02:05:29Z INFO JobServerQueue] Disposing job server ...
+[2026-10-17 02:05:29Z INFO JobServerQueue] Disposing results server ...
+[2026-10-17 02:05:29Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2026-10-17 02:05:29Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\quyhdp\action-runner\_work\_temp
+[2026-10-17 02:05:29Z INFO HostContext] Well known directory 'Bin': 'C:\quyhdp\action-runner\bin'
+[2026-10-17 02:05:29Z INFO HostContext] Well known directory 'Root': 'C:\quyhdp\action-runner'
+[2026-10-17 02:05:29Z INFO HostContext] Well known directory 'Diag': 'C:\quyhdp\action-runner\_diag'
+[2026-10-17 02:05:29Z INFO HostContext] Well known config file 'Telemetry': 'C:\quyhdp\action-runner\_diag\.telemetry'
+[2026-10-17 02:05:29Z INFO JobRunner] Raising job completed against run service

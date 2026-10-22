@@ -1,0 +1,248 @@
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1334ms
+✓ Running next.config.ts took 215ms
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1446ms
+✓ Running next.config.ts took 215ms
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 700ms
+✓ Running next.config.ts took 149ms
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1211ms
+✓ Running next.config.ts took 172ms
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1015ms
+✓ Running next.config.ts took 254ms
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.225:3000
+✓ Ready in 734ms
+✓ Running next.config.ts took 196ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.225:3000
+✓ Ready in 916ms
+✓ Running next.config.ts took 230ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.225:3000
+✓ Ready in 830ms
+✓ Running next.config.ts took 161ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 728ms
+✓ Running next.config.ts took 211ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-15 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-15 (825 giá trị 0)
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1720ms
+✓ Running next.config.ts took 870ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1736ms
+✓ Running next.config.ts took 913ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1305ms
+✓ Running next.config.ts took 433ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 644ms
+✓ Running next.config.ts took 135ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 512ms
+✓ Running next.config.ts took 106ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-16 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-16 (900 giá trị 0)
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 683ms
+✓ Running next.config.ts took 138ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1028ms
+✓ Running next.config.ts took 141ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+[Daily Init] Đã khởi tạo báo cáo ngày 2026-10-17 với giá trị 0 (0 ô)
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 1018ms
+✓ Running next.config.ts took 199ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+[Daily Init] Đã khởi tạo báo cáo ngày 2026-10-17 với giá trị 0 (912 ô)
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 787ms
+✓ Running next.config.ts took 178ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 554ms
+✓ Running next.config.ts took 116ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-18 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-18 (912 giá trị 0)
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-19 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-19 (912 giá trị 0)
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 527ms
+✓ Running next.config.ts took 134ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+Terminate batch job (Y/N)? 
+
+> nkdd-report@1.0.0 start
+> next start -p 5433
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:5433
+- Network:       http://192.168.1.225:5433
+✓ Ready in 539ms
+✓ Running next.config.ts took 115ms
+[Instrumentation] Khởi động In-Process Daily Cron Scheduler...
+[Daily Init] Đã khởi tạo báo cáo ngày 2026-10-19 với giá trị 0 (912 ô)
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-20 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-20 (956 giá trị 0)
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-21 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-21 (858 giá trị 0)
+[Midnight Cron] Phát hiện bước sang ngày mới: 2026-10-22 (Giờ Hồ Chí Minh). Đang tự động nạp 0...
+[Midnight Cron] Hoàn tất nạp số liệu ngày 2026-10-22 (870 giá trị 0)

@@ -1,0 +1,41 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261017083837
+Username: DC01-BVKHANHHOI\hoalp
+RunAs User: DC01-BVKHANHHOI\hoalp
+Configuration Name: 
+Machine: SRV-APPCNTT (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4696
+PSVersion: 5.1.26100.33438
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.33438
+BuildVersion: 10.0.26100.33438
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+>> git fetch
+From https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+ * branch            main       -> FETCH_HEAD
+>> git reset
+HEAD is now at ef52ac8 update: seed.ts
+Commit: ef52ac8 update: seed.ts
+>> Dung service NKDD-Report
+>> npm ci
+npm error code ENOTEMPTY
+npm error syscall rmdir
+npm error path C:\quyhdp\nkdd-report\bvkhanhhoi_dieuduong\node_modules\@base-ui\react\button
+npm error errno -4051
+npm error ENOTEMPTY: directory not empty, rmdir 'C:\quyhdp\nkdd-report\bvkhanhhoi_dieuduong\node_modules\@base-ui\react\
+button'
+npm error A complete log of this run can be found in: C:\Users\hoalp\AppData\Local\npm-cache\_logs\2026-10-17T01_38_46_0
+06Z-debug-0.log
+PS>TerminatingError(): "Loi o buoc 'npm ci' (exit code -4051)"
+LOI: Loi o buoc 'npm ci' (exit code -4051)
+Deploy LOI, NKDD-Report van dang TAT. Xem log: C:\quyhdp\logs\deploy_20261017_083837.log
+**********************
+Windows PowerShell transcript end
+End time: 20261017084103
+**********************

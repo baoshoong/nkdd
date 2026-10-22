@@ -1,0 +1,193 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261019104105
+Username: DC01-BVKHANHHOI\hoalp
+RunAs User: DC01-BVKHANHHOI\hoalp
+Configuration Name: 
+Machine: SRV-APPCNTT (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 3540
+PSVersion: 5.1.26100.33438
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.33438
+BuildVersion: 10.0.26100.33438
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+CANH BAO: --force-reset se XOA SACH toan bo du lieu database!
+>> git fetch
+From https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+ * branch            main       -> FETCH_HEAD
+>> git reset
+HEAD is now at 1a0df92 feat: search method
+Commit: 1a0df92 feat: search method
+>> Dung service NKDD-Report
+WARNING: Waiting for service 'Báo cáo Điều dưỡng Khánh Hội (NKDD-Report)' to stop...
+WARNING: Waiting for service 'Báo cáo Điều dưỡng Khánh Hội (NKDD-Report)' to stop...
+WARNING: Waiting for service 'Báo cáo Điều dưỡng Khánh Hội (NKDD-Report)' to stop...
+>> npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache i
+f you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerfu
+l.
+npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead
+.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabi
+lities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorb
+itant rates) by contacting i@izs.me
+npm warn deprecated fstream@1.0.12: This package is no longer supported.
+npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  Fo
+r CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support fo
+r other options.
+
+added 846 packages, and audited 847 packages in 3m
+
+255 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (2 moderate, 13 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+>> prisma generate
+◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
+◇ injected env (0) from .env.local // tip: ◈ secrets for agents [www.dotenvx.com]
+◇ injected env (7) from .env.production // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+
+✔ Generated Prisma Client (7.10.0) to .\src\generated\prisma in 833ms
+>> prisma db push
+◇ injected env (0) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+◇ injected env (0) from .env.local // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+◇ injected env (7) from .env.production // tip: ⌘ override existing { override: true }
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+Datasource "db": PostgreSQL database "nkdd", schema "public" at "localhost:5432"
+
+The PostgreSQL database "nkdd" schema "public" at "localhost:5432" was successfully reset.
+
+Your database is now in sync with your Prisma schema. Done in 468ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 7.10.0 -> 8.0.0-rc.23                 │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+>> prisma db seed
+◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+◇ injected env (0) from .env.local // tip: ⌁ auth for agents [www.vestauth.com]
+◇ injected env (7) from .env.production // tip: ⌘ enable debugging { debug: true }
+Loaded Prisma config from prisma.config.ts.
+
+Running seed command `npx tsx prisma/seed.ts` ...
+--- Bắt đầu seed dữ liệu NKDD ---
+1. Khởi tạo danh sách khoa...
+2. Khởi tạo danh sách nhóm chỉ số...
+3. Khởi tạo danh mục 76 chỉ số...
+Đã seed xong 76 chỉ số
+4. Khởi tạo người dùng...
+5. Khởi tạo phân quyền chỉ số chính thức cho các khoa phòng...
+Đã phân quyền thành công 493 chỉ số cho các khoa phòng.
+6. Khởi tạo ngày lễ Việt Nam năm 2026...
+7. Khởi tạo danh sách nhân sự mẫu cho các khoa...
+8. Khởi tạo kỳ chấm công mẫu 10/2026...
+--- Hoàn tất seed dữ liệu thành công! ---
+
+The seed command has been executed.
+>> npm run build
+
+> nkdd-report@1.0.0 build
+> next build
+
+▲ Next.js 16.4.0 (Turbopack)
+- Environments: .env.production
+✓ Running next.config.ts took 119ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 5.3s
+  Running TypeScript ...
+  Finished TypeScript in 11.9s ...
+  Collecting page data using 1 worker ...
+✓ Collecting page data using 1 worker in 2.9s
+  Generating static pages using 1 worker (0/37) ...
+  Generating static pages using 1 worker (9/37)
+  Generating static pages using 1 worker (18/37)
+  Generating static pages using 1 worker (27/37)
+✓ Generating static pages using 1 worker (37/37) in 1475ms
+  Finalizing page optimization ...
+✓ Finalizing page optimization in 3.8s
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /admin/permissions
+├ ƒ /admin/reorder
+├ ƒ /admin/users
+├ ƒ /api/admin/departments
+├ ƒ /api/admin/departments/[id]
+├ ƒ /api/admin/indicator-groups
+├ ƒ /api/admin/indicator-groups/[id]
+├ ƒ /api/admin/indicators
+├ ƒ /api/admin/indicators/[id]
+├ ƒ /api/admin/permissions
+├ ƒ /api/admin/reorder
+├ ƒ /api/admin/users
+├ ƒ /api/admin/users/reset-password
+├ ƒ /api/attendance/employees
+├ ƒ /api/attendance/employees/[id]
+├ ƒ /api/attendance/export
+├ ƒ /api/attendance/sheets
+├ ƒ /api/attendance/sheets/[id]/audits
+├ ƒ /api/attendance/sheets/[id]/lock
+├ ƒ /api/attendance/sheets/[id]/records
+├ ƒ /api/attendance/sheets/[id]/unlock
+├ ƒ /api/attendance/sheets/summary
+├ ƒ /api/audit
+├ ƒ /api/audit/export
+├ ƒ /api/auth/[...nextauth]
+├ ƒ /api/cron/daily-init
+├ ƒ /api/departments
+├ ƒ /api/reports
+├ ƒ /api/reports/export
+├ ƒ /api/reports/progress
+├ ƒ /api/reports/values
+├ ƒ /api/statistics
+├ ƒ /api/statistics/export
+├ ƒ /api/user/change-password
+├ ƒ /attendance
+├ ƒ /audit
+├ ƒ /dashboard
+├ ○ /login
+├ ƒ /menu
+├ ƒ /report
+├ ƒ /statistics
+└ ƒ /timesheet
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+Deploy OK, NKDD-Report dang Running
+  TCP    0.0.0.0:5433           0.0.0.0:0              LISTENING       10124
+  TCP    192.168.1.225:5433     192.168.1.142:50911    ESTABLISHED     10124
+  TCP    [::]:5433              [::]:0                 LISTENING       10124
+**********************
+Windows PowerShell transcript end
+End time: 20261019104610
+**********************

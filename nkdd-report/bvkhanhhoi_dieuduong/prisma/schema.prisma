@@ -1,0 +1,203 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  ADMIN
+  BGD
+  KHOA_USER
+}
+
+model User {
+  id               Int               @id @default(autoincrement())
+  username         String            @unique
+  password         String
+  name             String
+  role             Role              @default(KHOA_USER)
+  departmentId     Int?
+  department       Department?       @relation(fields: [departmentId], references: [id])
+  sheetsLocked     AttendanceSheet[] @relation("SheetLockedBy")
+  attendanceAudits AttendanceAudit[] @relation("UserAttendanceAudits")
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+}
+
+model Department {
+  id                   Int                   @id @default(autoincrement())
+  code                 String                @unique
+  name                 String
+  isTotal              Boolean               @default(false)
+  sortOrder            Int                   @default(0)
+  isActive             Boolean               @default(true)
+  users                User[]
+  reportValues         ReportValue[]
+  indicatorPermissions IndicatorPermission[]
+  employees            Employee[]
+  attendanceSheets     AttendanceSheet[]
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+}
+
+model IndicatorGroup {
+  id         Int         @id @default(autoincrement())
+  name       String      @unique
+  sortOrder  Int         @default(0)
+  indicators Indicator[]
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+}
+
+model Indicator {
+  id                   Int                   @id @default(autoincrement())
+  code                 String                @unique
+  name                 String
+  groupId              Int
+  group                IndicatorGroup        @relation(fields: [groupId], references: [id])
+  sortOrder            Int                   @default(0)
+  isActive             Boolean               @default(true)
+  reportValues         ReportValue[]
+  indicatorPermissions IndicatorPermission[]
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+}
+
+model IndicatorPermission {
+  id           Int        @id @default(autoincrement())
+  departmentId Int
+  indicatorId  Int
+  canEdit      Boolean    @default(true)
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  indicator    Indicator  @relation(fields: [indicatorId], references: [id], onDelete: Cascade)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@unique([departmentId, indicatorId])
+}
+
+model Report {
+  id           Int           @id @default(autoincrement())
+  reportDate   DateTime      @unique @db.Date
+  status       String        @default("OPEN")
+  reportValues ReportValue[]
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+}
+
+model ReportValue {
+  id           Int        @id @default(autoincrement())
+  reportId     Int
+  departmentId Int
+  indicatorId  Int
+  value        Float      @default(0)
+  report       Report     @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  indicator    Indicator  @relation(fields: [indicatorId], references: [id], onDelete: Cascade)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@unique([reportId, departmentId, indicatorId])
+}
+
+model AuditLog {
+  id           Int      @id @default(autoincrement())
+  reportDate   DateTime @db.Date
+  departmentId Int
+  indicatorId  Int
+  userId       Int
+  oldValue     Float?
+  newValue     Float
+  createdAt    DateTime @default(now())
+
+  @@index([reportDate, departmentId])
+}
+
+// ==========================================
+// MODULE CHẤM CÔNG (ATTENDANCE MANAGEMENT)
+// ==========================================
+
+model HolidayCalendar {
+  id          Int      @id @default(autoincrement())
+  holidayDate DateTime @unique @db.Date
+  name        String
+  year        Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([year])
+}
+
+model Employee {
+  id           Int                @id @default(autoincrement())
+  code         String             @unique
+  name         String
+  title        String
+  departmentId Int
+  department   Department         @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  isActive     Boolean            @default(true)
+  resignedAt   DateTime?          @db.Date
+  records      AttendanceRecord[]
+  audits       AttendanceAudit[]
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+
+  @@index([departmentId, isActive])
+}
+
+model AttendanceSheet {
+  id           Int                @id @default(autoincrement())
+  month        Int
+  year         Int
+  departmentId Int
+  department   Department         @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  status       String             @default("OPEN") // "OPEN" | "LOCKED"
+  standardDays Int                @default(22)
+  lockedAt     DateTime?
+  lockedById   Int?
+  lockedBy     User?              @relation("SheetLockedBy", fields: [lockedById], references: [id])
+  records      AttendanceRecord[]
+  audits       AttendanceAudit[]
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+
+  @@unique([departmentId, month, year])
+  @@index([month, year])
+}
+
+model AttendanceRecord {
+  id         Int             @id @default(autoincrement())
+  sheetId    Int
+  sheet      AttendanceSheet @relation(fields: [sheetId], references: [id], onDelete: Cascade)
+  employeeId Int
+  employee   Employee        @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  day        Int
+  status     String          @default("PRESENT") // "PRESENT" (✓) | "ABSENT" (V) | "LEAVE" (P)
+  note       String?
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+
+  @@unique([sheetId, employeeId, day])
+  @@index([sheetId, day])
+  @@index([employeeId])
+}
+
+model AttendanceAudit {
+  id         Int             @id @default(autoincrement())
+  sheetId    Int
+  sheet      AttendanceSheet @relation(fields: [sheetId], references: [id], onDelete: Cascade)
+  employeeId Int
+  employee   Employee        @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+  day        Int
+  oldStatus  String
+  newStatus  String
+  userId     Int
+  user       User            @relation("UserAttendanceAudits", fields: [userId], references: [id])
+  createdAt  DateTime        @default(now())
+
+  @@index([sheetId, employeeId])
+  @@index([createdAt])
+}

@@ -1,0 +1,164 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261017000523
+Username: DC01-BVKHANHHOI\hoalp
+RunAs User: DC01-BVKHANHHOI\hoalp
+Configuration Name: 
+Machine: SRV-APPCNTT (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 3532
+PSVersion: 5.1.26100.33438
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.33438
+BuildVersion: 10.0.26100.33438
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+CANH BAO: --force-reset se XOA SACH toan bo du lieu database!
+>> git fetch
+From https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+ * branch            main       -> FETCH_HEAD
+>> git reset
+HEAD is now at eea263c Merge branch 'main' of https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+Commit: eea263c Merge branch 'main' of https://github.com/hoangdinhreborn/bvkhanhhoi_dieuduong
+>> Dung service NKDD-Report
+>> npm ci
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache i
+f you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerfu
+l.
+npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead
+.
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabi
+lities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorb
+itant rates) by contacting i@izs.me
+npm warn deprecated fstream@1.0.12: This package is no longer supported.
+npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  Fo
+r CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated eslint@9.39.5: This version is no longer supported. Please see https://eslint.org/version-support fo
+r other options.
+npm warn cleanup Failed to remove some directories [
+npm warn cleanup   [
+npm warn cleanup     'C:\\quyhdp\\nkdd-report\\bvkhanhhoi_dieuduong\\node_modules\\@unrs\\resolver-binding-wasm32-wasi\\
+node_modules\\@emnapi\\runtime',
+npm warn cleanup     [Error: EPERM: operation not permitted, rmdir 'C:\quyhdp\nkdd-report\bvkhanhhoi_dieuduong\node_modu
+les\@unrs\resolver-binding-wasm32-wasi\node_modules\@emnapi\runtime'] {
+npm warn cleanup       errno: -4048,
+npm warn cleanup       code: 'EPERM',
+npm warn cleanup       syscall: 'rmdir',
+npm warn cleanup       path: 'C:\\quyhdp\\nkdd-report\\bvkhanhhoi_dieuduong\\node_modules\\@unrs\\resolver-binding-wasm3
+2-wasi\\node_modules\\@emnapi\\runtime'
+npm warn cleanup     }
+npm warn cleanup   ]
+npm warn cleanup ]
+
+added 846 packages, and audited 847 packages in 3m
+
+255 packages are looking for funding
+  run `npm fund` for details
+
+15 vulnerabilities (2 moderate, 13 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+>> prisma generate
+◇ injected env (0) from .env // tip: ⌘ override existing { override: true }
+◇ injected env (0) from .env.local // tip: ⌘ enable debugging { debug: true }
+◇ injected env (7) from .env.production // tip: ◈ encrypted .env [www.dotenvx.com]
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+
+✔ Generated Prisma Client (7.10.0) to .\src\generated\prisma in 1.15s
+>> prisma db push
+◇ injected env (0) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+◇ injected env (0) from .env.local // tip: ◈ encrypted .env [www.dotenvx.com]
+◇ injected env (7) from .env.production // tip: ⌘ suppress logs { quiet: true }
+Loaded Prisma config from prisma.config.ts.
+
+Prisma schema loaded from prisma\schema.prisma.
+Datasource "db": PostgreSQL database "nkdd", schema "public" at "localhost:5432"
+
+The PostgreSQL database "nkdd" schema "public" at "localhost:5432" was successfully reset.
+
+Your database is now in sync with your Prisma schema. Done in 407ms
+>> npm run build
+
+> nkdd-report@1.0.0 build
+> next build
+
+▲ Next.js 16.4.0 (Turbopack)
+- Environments: .env.production
+✓ Running next.config.ts took 87ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.7s
+  Running TypeScript ...
+  Finished TypeScript in 11.8s ...
+  Collecting page data using 1 worker ...
+✓ Collecting page data using 1 worker in 3.8s
+  Generating static pages using 1 worker (0/32) ...
+  Generating static pages using 1 worker (8/32)
+  Generating static pages using 1 worker (16/32)
+  Generating static pages using 1 worker (24/32)
+✓ Generating static pages using 1 worker (32/32) in 1872ms
+  Finalizing page optimization ...
+✓ Finalizing page optimization in 4.3s
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /admin/permissions
+├ ƒ /admin/users
+├ ƒ /api/admin/permissions
+├ ƒ /api/admin/users
+├ ƒ /api/admin/users/reset-password
+├ ƒ /api/attendance/employees
+├ ƒ /api/attendance/employees/[id]
+├ ƒ /api/attendance/export
+├ ƒ /api/attendance/sheets
+├ ƒ /api/attendance/sheets/[id]/audits
+├ ƒ /api/attendance/sheets/[id]/lock
+├ ƒ /api/attendance/sheets/[id]/records
+├ ƒ /api/attendance/sheets/[id]/unlock
+├ ƒ /api/attendance/sheets/summary
+├ ƒ /api/audit
+├ ƒ /api/audit/export
+├ ƒ /api/auth/[...nextauth]
+├ ƒ /api/cron/daily-init
+├ ƒ /api/departments
+├ ƒ /api/reports
+├ ƒ /api/reports/export
+├ ƒ /api/reports/progress
+├ ƒ /api/reports/values
+├ ƒ /api/statistics
+├ ƒ /api/statistics/export
+├ ƒ /api/user/change-password
+├ ƒ /attendance
+├ ƒ /audit
+├ ƒ /dashboard
+├ ○ /login
+├ ƒ /menu
+├ ƒ /report
+├ ƒ /statistics
+└ ƒ /timesheet
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+Deploy OK, NKDD-Report dang Running
+  TCP    0.0.0.0:5433           0.0.0.0:0              LISTENING       11196
+  TCP    [::]:5433              [::]:0                 LISTENING       11196
+**********************
+Windows PowerShell transcript end
+End time: 20261017001000
+**********************
